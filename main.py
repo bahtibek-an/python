@@ -87,8 +87,6 @@ async def root(
         end = min(start + per_page, total_items)
         paginated_results = results_storage[start:end]
 
-        print(page)
-
         return templates.TemplateResponse(
             "index.html",
             {
