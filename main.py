@@ -60,7 +60,7 @@ async def root(
         request: Request,
         file: UploadFile = File(...),
         page: int = 1,
-        per_page: int = 20
+        per_page: int = 50
     ):
     try:
         global results_storage
